@@ -1,9 +1,9 @@
 # DOD Setups
 
 The contractor equipment storefront for **Detail on Demand**. One page, zero build step:
-contractors pick the turn-key detailing rig that matches their vehicle (Sedan, Truck,
-Small Van, Large Van), look up their year/make/model for a recommendation, see every part
-itemized with street pricing, and place an order.
+contractors pick the turn-key detailing rig that matches their vehicle (Sedan, SUV, Truck,
+Small Van, Minivan, Large Van), look up their year/make/model for a recommendation, see
+every part itemized with street pricing, and place an order.
 
 Everything lives in **`index.html`** — HTML, CSS, JS and the vehicle database in one file.
 
@@ -21,7 +21,7 @@ Open `index.html` and find the `CONFIG` block at the top of the `<script>`:
 ```js
 const CONFIG = {
   orderEmail: "logannewman@sudbudsdetailing.com",
-  stripeLinks: { sedan:"", truck:"", smallvan:"", largevan:"" },
+  stripeLinks: { sedan:"", suv:"", truck:"", smallvan:"", minivan:"", largevan:"" },
 };
 ```
 
@@ -29,7 +29,8 @@ const CONFIG = {
   itemized work order at `orderEmail`. You invoice the contractor from there. Nothing else
   to set up.
 - **Instant card checkout**: create a [Stripe Payment Link](https://dashboard.stripe.com/payment-links)
-  for each rig (Sedan $1,299 · Truck $1,849 · Small Van $1,999 · Large Van $2,399) and paste
+  for each rig (Sedan $1,299 · SUV $1,549 · Truck $1,849 · Small Van $1,999 ·
+  Minivan $2,049 · Large Van $2,399) and paste
   the URLs into `stripeLinks`. Any rig with a link goes straight to Stripe checkout instead
   of the email form.
 
@@ -48,8 +49,8 @@ model tagged with a vehicle class:
 `s` sedan/coupe/hatch · `t` truck · `sv` small van · `lv` large van · `mv` minivan ·
 `u` SUV/crossover · `ul` full-size SUV
 
-`CLASS_MAP` decides which rig each class gets (minivans and full-size SUVs → Small Van Rig,
-crossovers → Sedan Rig, etc.) and the note shown with the recommendation. Add a model by
+`CLASS_MAP` decides which rig each class gets (crossovers and full-size SUVs → SUV Rig,
+minivans → Minivan Rig, etc.) and the note shown with the recommendation. Add a model by
 appending `["Model name","class",firstYear,lastYear]` under its make.
 
 ## Preview locally
