@@ -72,6 +72,7 @@ matching `IMG_ALT` text too.
 ## Notes
 
 - Street prices shown on rig cards are recent US retail (Harbor Freight, Sun Joe, WEN,
-  fleet-supply tanks) gathered Aug 2026 — recheck them a couple of times a year.
+  fleet-supply tanks), last verified 8/31/2026 against Harbor Freight coupon pricing,
+  Amazon and tank retailers — recheck them a couple of times a year.
 - The footer disclaimer already tells buyers street prices move with the market and the
   package price is what they pay.
