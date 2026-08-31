@@ -60,6 +60,15 @@ Open `index.html` in a browser, or:
 npx http-server .
 ```
 
+## Photos
+
+The four rig photos (and the hero) are embedded directly in `index.html` as WebP data
+URIs — the `IMG` object at the top of the `<script>` — so the site stays a single file
+with nothing else to host. They are studio renders of representative builds. To swap one:
+convert your photo to WebP around 1200 px wide (`cwebp -q 74 photo.jpg -o photo.webp`),
+base64-encode it, and replace that rig's `data:image/webp;base64,...` string. Update the
+matching `IMG_ALT` text too.
+
 ## Notes
 
 - Street prices shown on rig cards are recent US retail (Harbor Freight, Sun Joe, WEN,
