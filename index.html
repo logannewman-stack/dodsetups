@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DOD Setups</title>
+<meta name="description" content="Turn-key mobile detailing rigs from Detail on Demand — water, power, air, vacuum, reels and chemicals, sized to the vehicle you already drive. Four packages, itemized pricing, ready to work.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230A111C'/%3E%3Cpath d='M32 10c8 10.5 14 18.4 14 26a14 14 0 1 1-28 0c0-7.6 6-15.5 14-26z' fill='%2338B6FF'/%3E%3Cpath d='M35 26l-8 12h5.5L30 50l10-14h-6l4-10z' fill='%23FFB03A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* ————— DOD SETUPS · Detail on Demand contractor equipment program —————
+   Committed dark "garage at night" theme. All colors painted explicitly. */
+:root{
+  --ink:#0A111C;          /* page ground — deep harbor navy */
+  --ink-2:#0D1626;        /* alternating band */
+  --steel:#131E2E;        /* panel */
+  --steel-2:#1B2A3F;      /* raised panel / border base */
+  --line:#233450;         /* hairlines */
+  --foam:#F2F7FC;         /* primary text */
+  --mist:#9FB2C8;         /* secondary text (steel-blue neutral) */
+  --dim:#6B7F99;          /* tertiary */
+  --jet:#38B6FF;          /* water-jet blue accent */
+  --jet-deep:#1273B8;
+  --amber:#FFB03A;        /* work-light amber — prices, stock, hazard */
+  --good:#3ED598;
+  --display:"Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --body:"Barlow", "Segoe UI", Arial, sans-serif;
+  --mono:"IBM Plex Mono", "Courier New", monospace;
+  --rad:5px;
+  --wrap:1140px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+body{
+  margin:0;background:var(--ink);color:var(--foam);
+  font-family:var(--body);font-size:17px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--jet);color:#04101C}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:1.02;margin:0;text-wrap:balance;letter-spacing:.01em}
+p{margin:0 0 1em}
+a{color:var(--jet)}
+img{max-width:100%}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.mono{font-family:var(--mono)}
+
+/* hazard stripe — used sparingly as a signature divider */
+.hazard{
+  height:6px;border:0;margin:0;
+  background:repeating-linear-gradient(-45deg,var(--amber) 0 10px,transparent 10px 22px);
+  opacity:.5;
+}
+
+/* ————— top bar ————— */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(10,17,28,.88);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-in{display:flex;align-items:center;gap:26px;height:62px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--foam)}
+.brand svg{flex:none}
+.brand-name{font-family:var(--display);font-weight:800;font-size:23px;letter-spacing:.04em}
+.brand-name span{color:var(--jet)}
+.brand-sub{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.22em;color:var(--dim);margin-top:1px}
+.nav{display:flex;gap:22px;margin-left:auto}
+.nav a{color:var(--mist);text-decoration:none;font-weight:600;font-size:14.5px;letter-spacing:.02em}
+.nav a:hover{color:var(--foam)}
+.top-cta{
+  margin-left:6px;background:var(--jet);color:#04101C;border:0;cursor:pointer;
+  font:600 14.5px var(--body);padding:9px 18px;border-radius:var(--rad);text-decoration:none;
+}
+.top-cta:hover{background:#5CC4FF}
+@media (max-width:820px){ .nav{display:none} }
+
+/* ————— hero ————— */
+.hero{background:
+  radial-gradient(900px 420px at 8% -10%, rgba(56,182,255,.14), transparent 62%),
+  radial-gradient(700px 380px at 96% 8%, rgba(255,176,58,.07), transparent 60%),
+  var(--ink);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{display:grid;grid-template-columns:1.25fr .9fr;gap:44px;padding:72px 0 64px;align-items:center}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.24em;color:var(--jet);text-transform:uppercase;margin-bottom:18px}
+.hero h1{font-size:clamp(46px,7vw,84px);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--jet)}
+.hero-sub{color:var(--mist);font-size:18.5px;max-width:56ch;margin:20px 0 30px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;border:0;cursor:pointer;text-decoration:none;text-align:center;
+  font:600 16px var(--body);padding:14px 26px;border-radius:var(--rad);
+}
+.btn-jet{background:var(--jet);color:#04101C}
+.btn-jet:hover{background:#5CC4FF}
+.btn-ghost{background:transparent;color:var(--foam);box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px var(--jet);color:var(--jet)}
+.hero-proof{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap}
+.proof{font-size:14px;color:var(--dim)}
+.proof b{display:block;font-family:var(--mono);font-size:19px;color:var(--foam);font-weight:600}
+
+/* spec plate (hero right) */
+.plate{
+  background:linear-gradient(180deg,var(--steel-2),var(--steel));
+  border:1px solid var(--line);border-radius:var(--rad);
+  padding:22px 22px 18px;box-shadow:0 24px 60px rgba(0,0,0,.45);
+}
+.plate-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px dashed var(--line);padding-bottom:12px;margin-bottom:6px}
+.plate-head .t{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:.06em;text-transform:uppercase}
+.plate-head .n{font-family:var(--mono);font-size:11px;color:var(--amber);letter-spacing:.14em}
+.sysrow{display:flex;align-items:baseline;gap:12px;padding:9px 0;border-bottom:1px solid rgba(35,52,80,.55);font-size:15px}
+.sysrow:last-child{border-bottom:0}
+.sysrow .id{font-family:var(--mono);font-size:11px;color:var(--jet);flex:none;width:58px;letter-spacing:.08em}
+.sysrow .what{color:var(--foam);font-weight:600}
+.sysrow .how{margin-left:auto;color:var(--dim);font-size:13.5px;text-align:right}
+.plate-foot{margin-top:12px;font-family:var(--mono);font-size:11.5px;color:var(--good);letter-spacing:.1em}
+@media (max-width:920px){
+  .hero-in{grid-template-columns:1fr;padding:54px 0 48px}
+  .plate{max-width:520px}
+}
+
+/* ————— sections ————— */
+section{padding:74px 0}
+.sec-head{margin-bottom:38px;max-width:70ch}
+.sec-eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.24em;color:var(--amber);text-transform:uppercase;margin-bottom:12px}
+.sec-head h2{font-size:clamp(32px,4.4vw,50px);font-weight:800}
+.sec-head p{color:var(--mist);margin:14px 0 0;font-size:17.5px}
+.band{background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* ————— rig cards ————— */
+.rigs{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media (max-width:880px){ .rigs{grid-template-columns:1fr} }
+.rig{
+  background:var(--steel);border:1px solid var(--line);border-radius:var(--rad);
+  display:flex;flex-direction:column;overflow:hidden;position:relative;
+  transition:transform .18s ease, border-color .18s ease;
+}
+.rig:hover{transform:translateY(-3px);border-color:#2E4265}
+.rig-top{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:var(--steel-2);border-bottom:1px solid var(--line)}
+.rig-no{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;color:var(--jet)}
+.rig-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--dim);text-transform:uppercase}
+.rig-main{padding:20px 20px 22px;display:flex;flex-direction:column;gap:16px;flex:1}
+.rig h3{font-size:31px;font-weight:800}
+.rig-fits{color:var(--mist);font-size:15px;margin-top:4px}
+.rig-price-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.rig-price{font-family:var(--mono);font-weight:600;font-size:34px;color:var(--amber);letter-spacing:-.01em}
+.rig-price small{font-size:14px;color:var(--dim);font-weight:400;letter-spacing:0}
+.rig-value{font-size:13px;color:var(--dim)}
+.caps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--rad);overflow:hidden}
+.cap{background:var(--ink-2);padding:10px 10px 9px}
+.cap b{display:block;font-family:var(--mono);font-size:13.5px;font-weight:600;color:var(--foam);white-space:nowrap}
+.cap span{font-size:10.5px;letter-spacing:.12em;color:var(--dim);text-transform:uppercase;font-family:var(--mono)}
+@media (max-width:480px){ .caps{grid-template-columns:repeat(2,1fr)} }
+.fits-like{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.fits-like .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;color:var(--dim)}
+.chip{background:var(--ink);border:1px solid var(--line);color:var(--mist);font-size:13.5px;font-weight:600;padding:5px 12px;border-radius:999px}
+.chip.more{color:var(--dim);font-weight:400}
+.rig-actions{display:flex;gap:12px;margin-top:auto}
+.rig-actions .btn{flex:1;padding:13px 10px;font-size:15.5px}
+.parts{border-top:1px dashed var(--line);margin:4px -20px -22px;padding:16px 20px 20px;background:var(--ink-2)}
+.parts summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;font:600 14.5px var(--body);color:var(--jet);padding:2px 0}
+.parts summary::-webkit-details-marker{display:none}
+.parts summary::after{content:"▾";transition:transform .15s;color:var(--dim)}
+.parts[open] summary::after{transform:rotate(180deg)}
+.parts table{width:100%;border-collapse:collapse;margin-top:12px;font-size:14.5px}
+.parts td{padding:7px 0;border-bottom:1px solid rgba(35,52,80,.5);vertical-align:top;color:var(--mist)}
+.parts td.pr{font-family:var(--mono);font-size:13px;color:var(--foam);text-align:right;white-space:nowrap;padding-left:14px;font-variant-numeric:tabular-nums}
+.parts tr.total td{border-bottom:0;color:var(--foam);font-weight:600;padding-top:11px}
+.parts tr.total td.pr{color:var(--amber)}
+.parts .incl{font-size:13px;color:var(--dim);margin:10px 0 0}
+
+/* ————— finder ————— */
+.finder-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:26px;align-items:start}
+@media (max-width:880px){ .finder-grid{grid-template-columns:1fr} }
+.terminal{
+  background:var(--steel);border:1px solid var(--line);border-radius:var(--rad);overflow:hidden;
+}
+.term-head{display:flex;align-items:center;gap:10px;background:var(--steel-2);border-bottom:1px solid var(--line);padding:11px 18px;font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;color:var(--mist);text-transform:uppercase}
+.term-dot{width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 8px rgba(62,213,152,.8)}
+.term-body{padding:20px 18px 22px;display:grid;gap:15px}
+.field label{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--dim);text-transform:uppercase;margin-bottom:7px}
+.field select{
+  width:100%;appearance:none;background:var(--ink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239FB2C8' stroke-width='1.6' fill='none'/%3E%3C/svg%3E") no-repeat right 14px center;
+  border:1px solid var(--line);border-radius:var(--rad);color:var(--foam);
+  font:500 16px var(--body);padding:12px 38px 12px 14px;cursor:pointer;
+}
+.field select:focus-visible{outline:2px solid var(--jet);outline-offset:1px}
+.field select:disabled{opacity:.45;cursor:not-allowed}
+.result{
+  border:1px solid var(--line);border-radius:var(--rad);
+  background:linear-gradient(180deg,var(--steel-2),var(--steel));
+  padding:26px 24px;min-height:100%;
+}
+.result .idle{color:var(--dim);font-size:16px;max-width:44ch}
+.result .idle .big{font-family:var(--display);text-transform:uppercase;font-weight:700;font-size:26px;color:var(--mist);display:block;margin-bottom:10px}
+.res-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--jet);text-transform:uppercase}
+.res-vehicle{font-family:var(--display);font-weight:800;font-size:34px;text-transform:uppercase;margin:8px 0 2px}
+.res-arrow{color:var(--dim);font-size:14px;margin:10px 0 2px;font-family:var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.res-rig{font-family:var(--display);font-weight:800;font-size:30px;text-transform:uppercase;color:var(--jet)}
+.res-price{font-family:var(--mono);font-weight:600;font-size:26px;color:var(--amber);margin:6px 0 12px}
+.res-note{color:var(--mist);font-size:15.5px;max-width:52ch}
+.res-actions{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+.res-miss{color:var(--mist);font-size:15.5px}
+
+/* ————— systems / cheapest build ————— */
+.sys-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:920px){ .sys-grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:560px){ .sys-grid{grid-template-columns:1fr} }
+.sys{
+  background:var(--steel);border:1px solid var(--line);border-radius:var(--rad);
+  padding:18px 18px 16px;
+}
+.sys .id{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--jet)}
+.sys h3{font-size:22px;margin:8px 0 6px}
+.sys p{color:var(--mist);font-size:14.5px;margin:0 0 12px}
+.sys .pick{border-top:1px dashed var(--line);padding-top:10px;font-size:13.5px;color:var(--dim);display:flex;justify-content:space-between;gap:10px}
+.sys .pick b{color:var(--foam);font-weight:600}
+.sys .pick .pr{font-family:var(--mono);color:var(--amber);white-space:nowrap}
+.why{margin-top:30px;background:var(--steel);border:1px solid var(--line);border-left:3px solid var(--amber);border-radius:var(--rad);padding:20px 24px;color:var(--mist);font-size:16px;max-width:100%}
+.why b{color:var(--foam)}
+
+/* ————— faq ————— */
+.faq{max-width:820px}
+.faq details{border:1px solid var(--line);border-radius:var(--rad);background:var(--steel);margin-bottom:12px;overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:17px 20px;font:600 17px var(--body);display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--mono);color:var(--jet);font-size:19px;flex:none}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 20px 18px;color:var(--mist);font-size:15.5px}
+.faq .a p{margin:0 0 .7em}
+.faq .a p:last-child{margin-bottom:0}
+
+/* ————— footer ————— */
+footer{border-top:1px solid var(--line);background:var(--ink-2);padding:44px 0 54px;color:var(--dim);font-size:14.5px}
+.foot-in{display:flex;gap:30px;flex-wrap:wrap;align-items:flex-start;justify-content:space-between}
+.foot-brand .brand-name{font-size:21px}
+.foot-note{max-width:52ch;margin-top:10px}
+footer a{color:var(--mist)}
+.foot-col b{display:block;color:var(--foam);font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px}
+.foot-col div{margin-bottom:6px}
+
+/* ————— order modal ————— */
+.modal-wrap{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:18px}
+.modal-wrap.open{display:flex}
+.modal-bg{position:absolute;inset:0;background:rgba(4,9,16,.78);backdrop-filter:blur(3px)}
+.modal{
+  position:relative;width:min(560px,100%);max-height:92vh;overflow:auto;
+  background:var(--steel);border:1px solid #2E4265;border-radius:var(--rad);
+  box-shadow:0 30px 90px rgba(0,0,0,.6);
+}
+.modal-hazard{height:6px;background:repeating-linear-gradient(-45deg,var(--amber) 0 10px,#0000 10px 22px);opacity:.6}
+.modal-head{display:flex;justify-content:space-between;align-items:flex-start;padding:20px 22px 0}
+.modal-head .wo{font-family:var(--mono);font-size:10.5px;letter-spacing:.22em;color:var(--amber);text-transform:uppercase}
+.modal-head h3{font-size:29px;margin-top:6px}
+.modal-close{background:none;border:1px solid var(--line);color:var(--mist);border-radius:var(--rad);width:34px;height:34px;font-size:17px;cursor:pointer;flex:none}
+.modal-close:hover{color:var(--foam);border-color:var(--jet)}
+.modal-sum{margin:14px 22px 0;background:var(--ink-2);border:1px solid var(--line);border-radius:var(--rad);padding:13px 16px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.modal-sum .r{font-weight:600}
+.modal-sum .p{font-family:var(--mono);font-weight:600;color:var(--amber);font-size:21px;white-space:nowrap}
+.modal form{padding:18px 22px 24px;display:grid;gap:14px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){ .f2{grid-template-columns:1fr} }
+.modal label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.18em;color:var(--dim);text-transform:uppercase;margin-bottom:6px}
+.modal input,.modal textarea,.modal select{
+  width:100%;background:var(--ink);border:1px solid var(--line);border-radius:var(--rad);
+  color:var(--foam);font:500 15.5px var(--body);padding:11px 13px;
+}
+.modal input:focus-visible,.modal textarea:focus-visible,.modal select:focus-visible,
+.btn:focus-visible,.parts summary:focus-visible,.faq summary:focus-visible,.modal-close:focus-visible{
+  outline:2px solid var(--jet);outline-offset:1px
+}
+.modal textarea{resize:vertical;min-height:74px}
+.modal .send{margin-top:4px;padding:15px}
+.modal .fine{font-size:12.5px;color:var(--dim);margin:2px 0 0;text-align:center}
+.order-done{padding:8px 22px 26px;display:none}
+.order-done.show{display:block}
+.order-done .ok{color:var(--good);font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.order-done p{color:var(--mist);font-size:15.5px;margin:10px 0 14px}
+.order-text{width:100%;background:var(--ink);border:1px solid var(--line);border-radius:var(--rad);color:var(--mist);font:400 12.5px var(--mono);padding:12px;min-height:150px;white-space:pre-wrap}
+.copy-row{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+
+/* reveal — content is visible by default; JS adds .pre to opt into the animation */
+.rev.pre{opacity:0;transform:translateY(14px)}
+.rev{transition:opacity .5s ease,transform .5s ease}
+.rev.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){ .rev.pre{opacity:1;transform:none} }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top" aria-label="DOD Setups home">
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="12" fill="#0D1626" stroke="#233450"/>
+        <path d="M32 10c8 10.5 14 18.4 14 26a14 14 0 1 1-28 0c0-7.6 6-15.5 14-26z" fill="#38B6FF"/>
+        <path d="M35 26l-8 12h5.5L30 50l10-14h-6l4-10z" fill="#FFB03A"/>
+      </svg>
+      <span>
+        <span class="brand-name">DOD <span>SETUPS</span></span>
+        <span class="brand-sub">DETAIL ON DEMAND</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#rigs">The rigs</a>
+      <a href="#finder">Find my rig</a>
+      <a href="#inside">What's inside</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="top-cta" href="#rigs">Order a rig</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ————— HERO ————— -->
+  <section class="hero" style="padding:0">
+    <div class="wrap hero-in">
+      <div>
+        <div class="eyebrow">Detail on Demand · Contractor Equipment Program</div>
+        <h1>Your whole rig.<br>One box. <em>One price.</em></h1>
+        <p class="hero-sub">
+          Four turn-key mobile detailing setups sized to the vehicle you already drive —
+          small van, large van, truck, or sedan. Water, power, air, vacuum, reels and
+          chemicals: every system included, assembled, plumbed and pressure-tested before handoff.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-jet" href="#finder">Find my rig by vehicle</a>
+          <a class="btn btn-ghost" href="#rigs">Browse the four rigs</a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof"><b>4</b>rig sizes</div>
+          <div class="proof"><b>7</b>systems in every rig</div>
+          <div class="proof"><b>$1,299+</b>complete, assembled</div>
+          <div class="proof"><b>100%</b>itemized pricing</div>
+        </div>
+      </div>
+      <aside class="plate" aria-label="What every rig includes">
+        <div class="plate-head">
+          <span class="t">Every rig ships complete</span>
+          <span class="n">SPEC / DOD-26</span>
+        </div>
+        <div class="sysrow"><span class="id">SYS-01</span><span class="what">Water</span><span class="how">16–65 gal tank, sized to your vehicle</span></div>
+        <div class="sysrow"><span class="id">SYS-02</span><span class="what">Pressure</span><span class="how">2,030 PSI washer + tank feed</span></div>
+        <div class="sysrow"><span class="id">SYS-03</span><span class="what">Power</span><span class="how">Quiet inverter generator</span></div>
+        <div class="sysrow"><span class="id">SYS-04</span><span class="what">Air</span><span class="how">Compressor + blow-out gun</span></div>
+        <div class="sysrow"><span class="id">SYS-05</span><span class="what">Vacuum</span><span class="how">Wet/dry shop vac</span></div>
+        <div class="sysrow"><span class="id">SYS-06</span><span class="what">Reels</span><span class="how">Cord reel + water hose reel</span></div>
+        <div class="sysrow"><span class="id">SYS-07</span><span class="what">Chemicals</span><span class="how">Full loadout, towels &amp; buckets</span></div>
+        <div class="plate-foot">✓ ASSEMBLED · PLUMBED · PRESSURE-TESTED</div>
+      </aside>
+    </div>
+  </section>
+  <div class="hazard" role="presentation"></div>
+
+  <!-- ————— RIGS ————— -->
+  <section id="rigs">
+    <div class="wrap">
+      <div class="sec-head rev">
+        <div class="sec-eyebrow">The Rigs · Pick by your vehicle</div>
+        <h2>Four setups. Every one works on day one.</h2>
+        <p>Same seven systems in each — the tank, generator, vacuum and reels scale up with your
+        cargo space. Open the full parts list on any rig to see exactly what you're paying for.</p>
+      </div>
+      <div class="rigs" id="rigGrid"><!-- rendered by JS --></div>
+    </div>
+  </section>
+
+  <!-- ————— FINDER ————— -->
+  <section id="finder" class="band">
+    <div class="wrap">
+      <div class="sec-head rev">
+        <div class="sec-eyebrow">Rig Finder · Year / Make / Model</div>
+        <h2>Look up your vehicle. Get your rig.</h2>
+        <p>Tell us what you drive and we'll match the setup that fits its cargo space — including
+        SUVs, minivans and crossovers.</p>
+      </div>
+      <div class="finder-grid">
+        <div class="terminal rev">
+          <div class="term-head"><span class="term-dot"></span> DOD Rig Finder v2.6</div>
+          <div class="term-body">
+            <div class="field">
+              <label for="fYear">Year</label>
+              <select id="fYear"><option value="">Select year…</option></select>
+            </div>
+            <div class="field">
+              <label for="fMake">Make</label>
+              <select id="fMake" disabled><option value="">Select make…</option></select>
+            </div>
+            <div class="field">
+              <label for="fModel">Model</label>
+              <select id="fModel" disabled><option value="">Select model…</option></select>
+            </div>
+          </div>
+        </div>
+        <div class="result rev" id="finderResult" aria-live="polite">
+          <div class="idle">
+            <span class="big">Awaiting vehicle…</span>
+            Pick a year, make and model and your recommended rig shows up here with pricing
+            and a straight answer on how it mounts.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ————— WHAT'S INSIDE ————— -->
+  <section id="inside">
+    <div class="wrap">
+      <div class="sec-head rev">
+        <div class="sec-eyebrow">What's inside · The cheapest build that actually works</div>
+        <h2>Seven systems. Budget picks that hold up.</h2>
+        <p>We priced every way to build a working mobile rig and kept the cheapest parts that
+        survive daily contractor use — Harbor Freight power, Sun Joe pressure, fleet-supply tanks.
+        Street prices shown are from the Truck Rig build so you can check our math.</p>
+      </div>
+      <div class="sys-grid" id="sysGrid"><!-- rendered by JS --></div>
+      <div class="why rev">
+        <b>Why buy it from us instead of sourcing it yourself?</b> You could — the itemized street
+        prices are printed on every rig card on purpose. The package price adds the part that's hard
+        to buy: tank plumbing and fittings done right, the generator load-tested against the vac and
+        compressor running together, reels mounted, chemicals decanted and labeled, and a person to
+        call when something breaks on a job. You're rolling to your first driveway the day you pick it up.
+      </div>
+    </div>
+  </section>
+
+  <!-- ————— FAQ ————— -->
+  <section id="faq" class="band">
+    <div class="wrap">
+      <div class="sec-head rev">
+        <div class="sec-eyebrow">Questions · Straight answers</div>
+        <h2>FAQ</h2>
+      </div>
+      <div class="faq rev">
+        <details>
+          <summary>How does buying work?</summary>
+          <div class="a"><p>Hit <b>Buy this rig</b>, send the order form, and we confirm your build within
+          one business day. You pay by invoice (card or ACH) — half down to start the build, the
+          balance at pickup or delivery. Most rigs are ready in 5–7 days.</p></div>
+        </details>
+        <details>
+          <summary>Is the rig installed into my vehicle?</summary>
+          <div class="a"><p>Every rig comes assembled, plumbed and tested as a unit, with the mounting
+          hardware for your vehicle class (bed straps and a weather cover for trucks, floor anchors
+          for vans, a trunk layout that doesn't slide for sedans). Local pickup includes a load-in
+          session where we mount it with you and run the whole system before you leave.</p></div>
+        </details>
+        <details>
+          <summary>Why these parts? They look cheap.</summary>
+          <div class="a"><p>That's the point — this is the least money that produces a rig that fully
+          works, chosen from gear we've actually run: Predator generators, Sun Joe pressure washers,
+          pancake compressors, fleet-supply poly tanks. Every part carries its manufacturer warranty,
+          and every one has a standard upgrade path (bigger tank, gas pressure washer, quieter
+          generator) when your route fills up.</p></div>
+        </details>
+        <details>
+          <summary>What do I still need on my own?</summary>
+          <div class="a"><p>The vehicle, gas for the generator, and water. Fill the tank at home before
+          your route — every rig includes the fill fittings. That's it: soap, towels, brushes,
+          buckets and dressings are all in the loadout.</p></div>
+        </details>
+        <details>
+          <summary>Can I split the payment?</summary>
+          <div class="a"><p>Yes. Active DOD contractors can split any rig over their first jobs —
+          typically 4 weekly payments with the rig released at the first payment. Note it on the
+          order form and we'll set it up on the invoice.</p></div>
+        </details>
+        <details>
+          <summary>What if something breaks?</summary>
+          <div class="a"><p>Text us first — most fixes are a fitting or a fuse and we'll talk you
+          through it same-day. Defective parts go back under their manufacturer warranty
+          (90 days to 2 years depending on the part), and we keep the common spares — pump seals,
+          hose ends, couplers — on the shelf so you're not down for a week.</p></div>
+        </details>
+        <details>
+          <summary>I don't see my vehicle in the finder.</summary>
+          <div class="a"><p>The finder covers the common US fleet back to 1990, but if yours isn't
+          listed, order the rig that matches your cargo space — trunk = Sedan rig, open bed = Truck
+          rig, enclosed cargo = Small or Large Van rig — or just put your year/make/model in the
+          order form notes and we'll spec it for you.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <span class="brand-name">DOD <span style="color:var(--jet)">SETUPS</span></span>
+      <div class="foot-note">The contractor equipment program from Detail on Demand.
+      Turn-key mobile detailing rigs, itemized honestly, priced to get you working.</div>
+    </div>
+    <div class="foot-col">
+      <b>Order &amp; Support</b>
+      <div><a id="footEmail" href="#">orders — email</a></div>
+      <div><a href="#finder">Rig finder</a></div>
+      <div><a href="#faq">FAQ</a></div>
+    </div>
+    <div class="foot-col">
+      <b>The rigs</b>
+      <div><a href="#rigs">Sedan &amp; Coupe — $1,299</a></div>
+      <div><a href="#rigs">Truck — $1,849</a></div>
+      <div><a href="#rigs">Small Van — $1,999</a></div>
+      <div><a href="#rigs">Large Van — $2,399</a></div>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:34px;font-size:13px;color:var(--dim)">
+    © 2026 Detail on Demand · Street prices shown are recent US retail for reference and move with the market; package prices are what you pay.
+  </div>
+</footer>
+
+<!-- ————— ORDER MODAL ————— -->
+<div class="modal-wrap" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="omTitle">
+  <div class="modal-bg" data-close></div>
+  <div class="modal">
+    <div class="modal-hazard"></div>
+    <div class="modal-head">
+      <div>
+        <div class="wo">Work order · DOD Setups</div>
+        <h3 id="omTitle">Order this rig</h3>
+      </div>
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+    </div>
+    <div class="modal-sum">
+      <span class="r" id="omRig">—</span>
+      <span class="p" id="omPrice">—</span>
+    </div>
+    <form id="orderForm">
+      <div class="f2">
+        <div><label for="oName">Your name</label><input id="oName" name="name" required autocomplete="name"></div>
+        <div><label for="oPhone">Phone</label><input id="oPhone" name="phone" type="tel" required autocomplete="tel"></div>
+      </div>
+      <div class="f2">
+        <div><label for="oEmail">Email</label><input id="oEmail" name="email" type="email" required autocomplete="email"></div>
+        <div><label for="oCity">City / State</label><input id="oCity" name="city" placeholder="Des Moines, IA"></div>
+      </div>
+      <div><label for="oVehicle">Your work vehicle (year / make / model)</label><input id="oVehicle" name="vehicle" placeholder="2019 Ford Transit 250"></div>
+      <div><label for="oPay">Payment preference</label>
+        <select id="oPay" name="pay">
+          <option>Invoice — pay in full</option>
+          <option>Split-pay (4 weekly payments)</option>
+          <option>Talk to me first</option>
+        </select>
+      </div>
+      <div><label for="oNotes">Notes (anything we should know)</label><textarea id="oNotes" name="notes" placeholder="Pickup vs. delivery, timeline, upgrades…"></textarea></div>
+      <button class="btn btn-jet send" type="submit" id="omSend">Send order</button>
+      <p class="fine" id="omFine">Opens your email app with the order filled in — nothing is charged yet. We confirm within one business day.</p>
+    </form>
+    <div class="order-done" id="orderDone">
+      <div class="ok">✓ Order drafted</div>
+      <p>Your email app should have opened with this order addressed to us. If it didn't,
+      copy the order below and send it to <a id="doneEmail" href="#">our orders address</a> —
+      or reply by text with the same info.</p>
+      <div class="order-text" id="orderText"></div>
+      <div class="copy-row">
+        <button class="btn btn-ghost" id="copyOrder" type="button">Copy order text</button>
+        <button class="btn btn-jet" data-close type="button">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ═══════════════ CONFIG — edit these to run the store ═══════════════
+   orderEmail : where "Send order" emails go.
+   stripeLinks: paste a Stripe Payment Link per rig to switch that rig's
+                Buy button from email-order to instant card checkout.       */
+const CONFIG = {
+  orderEmail: "logannewman@sudbudsdetailing.com",
+  stripeLinks: { sedan:"", truck:"", smallvan:"", largevan:"" },
+};
+
+/* ═══════════════ THE RIGS — single source of truth ═══════════════ */
+const PACKAGES = [
+  {
+    id:"sedan", no:"RIG-01", name:"Sedan & Coupe Rig", tag:"Trunk-fit",
+    price:1299, partsValue:1177,
+    fits:"Rides in a trunk + back seat. For contractors starting in the car they already own.",
+    examples:["Toyota Camry","Honda Accord"],
+    caps:{ Water:"16 gal", Power:"2,000 W", Air:"3 gal", Vacuum:"5 gal" },
+    items:[
+      ["16-gal low-profile poly water tank + fill kit",109],
+      ["2,000 W quiet inverter generator (WEN 56200i class)",429],
+      ["Sun Joe SPX3000 pressure washer — 2,030 PSI",149],
+      ["12 V tank-feed pump + plumbing kit",69],
+      ["3-gal air compressor + blow-out gun",75],
+      ["5-gal 4 HP wet/dry vacuum",69],
+      ["50-ft 12/3 extension cord on winder reel",49],
+      ["50-ft water hose + compact reel",59],
+      ["Starter chemical loadout — soap, APC, interior, glass, wheel, dressing, 24 towels, 2 buckets w/ guards",169],
+    ],
+  },
+  {
+    id:"truck", no:"RIG-02", name:"Truck Rig", tag:"Open bed",
+    price:1849, partsValue:1730,
+    fits:"Strapped and covered in a pickup bed, tank against the cab. The workhorse setup.",
+    examples:["Ford F-150","Chevy Silverado 1500"],
+    caps:{ Water:"35 gal", Power:"3,500 W", Air:"6 gal", Vacuum:"5.5 gal" },
+    items:[
+      ["35-gal leg tank + tie-down kit",159],
+      ["Predator 3500 super-quiet inverter generator",749],
+      ["Sun Joe SPX3000 pressure washer — 2,030 PSI",149],
+      ["12 V tank-feed pump + plumbing kit",69],
+      ["6-gal 150 PSI pancake compressor + blow-out gun",119],
+      ["5.5-gal 5 HP wet/dry vacuum",79],
+      ["50-ft retractable extension cord reel",79],
+      ["65-ft water hose + mounted reel",69],
+      ["Bed strap + weather cover kit",59],
+      ["Full chemical loadout — exterior, interior, wheels, dressings, 36 towels, buckets w/ guards",199],
+    ],
+  },
+  {
+    id:"smallvan", no:"RIG-03", name:"Small Van Rig", tag:"Compact cargo",
+    price:1999, partsValue:1869,
+    fits:"Floor-anchored in a compact cargo van — enclosed, organized, ready to roll up and work.",
+    examples:["Ford Transit Connect","Ram ProMaster City"],
+    caps:{ Water:"35 gal", Power:"3,500 W", Air:"6 gal", Vacuum:"5.5 gal" },
+    items:[
+      ["35-gal low-profile poly tank + fill kit",189],
+      ["Predator 3500 super-quiet inverter generator",749],
+      ["Sun Joe SPX3000 pressure washer — 2,030 PSI",149],
+      ["12 V tank-feed pump + plumbing kit",69],
+      ["6-gal 150 PSI pancake compressor + blow-out gun",119],
+      ["5.5-gal 5 HP wet/dry vacuum",79],
+      ["50-ft retractable extension cord reel",79],
+      ["75-ft water hose on wall-mount reel",89],
+      ["Van floor anchor + mounting kit",79],
+      ["6-in dual-action polisher + pads",69],
+      ["Full chemical loadout — exterior, interior, wheels, dressings, 36 towels, buckets w/ guards",199],
+    ],
+  },
+  {
+    id:"largevan", no:"RIG-04", name:"Large Van Rig", tag:"Full-size cargo",
+    price:2399, partsValue:2234,
+    fits:"The full shop-on-wheels for a full-size cargo van — big water, wall reels, shelving.",
+    examples:["Ford Transit 250","Mercedes Sprinter 2500"],
+    caps:{ Water:"65 gal", Power:"3,500 W", Air:"6 gal", Vacuum:"12 gal" },
+    items:[
+      ["65-gal low-profile detailing tank + fill kit",339],
+      ["Predator 3500 super-quiet inverter generator",749],
+      ["Sun Joe SPX3000 pressure washer — 2,030 PSI",149],
+      ["12 V tank-feed pump + plumbing kit",69],
+      ["6-gal 150 PSI pancake compressor + blow-out gun",119],
+      ["12-gal 6.5 HP wet/dry vacuum",119],
+      ["50-ft retractable extension cord reel",79],
+      ["100-ft retractable water hose reel",119],
+      ["50-ft air hose reel",45],
+      ["Van shelving + anchor kit",129],
+      ["6-in dual-action polisher + pads",69],
+      ["Pro chemical loadout — exterior, interior, wheels, coatings-safe wash, dressings, 48 towels, buckets w/ guards",249],
+    ],
+  },
+];
+
+/* ═══════════════ SYSTEMS (What's-inside grid; prices = Truck Rig picks) ═══ */
+const SYSTEMS = [
+  {id:"SYS-01",name:"Water",how:"Poly leg tank from fleet supply, plumbed with a fill port and shutoff. 16, 35 or 65 gal by rig.",pick:"35-gal leg tank",pr:"$159"},
+  {id:"SYS-02",name:"Pressure",how:"2,030 PSI electric washer fed from your tank by a 12 V pump — no spigot needed at the job.",pick:"Sun Joe SPX3000 + feed pump",pr:"$218"},
+  {id:"SYS-03",name:"Power",how:"Super-quiet inverter generator, load-tested running the vac and compressor together.",pick:"Predator 3500",pr:"$749"},
+  {id:"SYS-04",name:"Air",how:"Blow-out gun for vents, seals, badges and door jambs — the difference between clean and detailed.",pick:"6-gal 150 PSI pancake",pr:"$119"},
+  {id:"SYS-05",name:"Vacuum",how:"Wet/dry vac with the reach and CFM for carpets, mats and extractions-lite.",pick:"5.5-gal 5 HP wet/dry",pr:"$79"},
+  {id:"SYS-06",name:"Reels",how:"Cord and hose on reels — setup and teardown in minutes, not twenty.",pick:"Retractable cord + hose reels",pr:"$148"},
+  {id:"SYS-07",name:"Chemicals",how:"Soap, APC, interior, glass, wheel, dressings, towels, buckets. Decanted, labeled, ready.",pick:"Full loadout",pr:"$199"},
+];
+
+/* ═══════════════ VEHICLE DATABASE ═══════════════
+   [model, class, firstYear, lastYear]
+   class: s=sedan/coupe/hatch · t=truck · sv=small van · lv=large van
+          mv=minivan · u=SUV/crossover · ul=full-size SUV                  */
+const V = {
+"Ford":[["F-150","t",1990,2027],["F-250 / F-350 Super Duty","t",1999,2027],["Ranger","t",1990,2027],["Maverick","t",2022,2027],["Transit Connect","sv",2010,2023],["Transit 150 / 250 / 350","lv",2015,2027],["E-Series (Econoline)","lv",1990,2014],["Fusion","s",2006,2020],["Taurus","s",1990,2019],["Focus","s",2000,2018],["Fiesta","s",2011,2019],["Mustang","s",1990,2027],["Crown Victoria","s",1992,2011],["Explorer","u",1991,2027],["Escape","u",2001,2027],["Edge","u",2007,2024],["Bronco","u",1990,2027],["Expedition","ul",1997,2027],["Windstar / Freestar","mv",1995,2007]],
+"Chevrolet":[["Silverado 1500","t",1999,2027],["C/K 1500","t",1990,1998],["Silverado 2500 / 3500 HD","t",2001,2027],["Colorado","t",2004,2027],["S-10","t",1990,2004],["Avalanche","t",2002,2013],["Express 1500 / 2500 / 3500","lv",1996,2026],["Astro","sv",1990,2005],["City Express","sv",2015,2018],["Malibu","s",1997,2025],["Impala","s",2000,2020],["Cruze","s",2011,2019],["Cavalier","s",1990,2005],["Cobalt","s",2005,2010],["Camaro","s",1990,2024],["Corvette","s",1990,2027],["Equinox","u",2005,2027],["Traverse","u",2009,2027],["Blazer","u",1990,2027],["Trailblazer","u",2002,2027],["Tahoe","ul",1995,2027],["Suburban","ul",1990,2027]],
+"GMC":[["Sierra 1500","t",1990,2027],["Sierra 2500 / 3500 HD","t",2001,2027],["Canyon","t",2004,2027],["Sonoma","t",1991,2004],["Savana","lv",1996,2026],["Safari","sv",1990,2005],["Terrain","u",2010,2027],["Acadia","u",2007,2027],["Yukon","ul",1992,2027],["Yukon XL","ul",2000,2027]],
+"Ram":[["1500","t",2011,2027],["2500 / 3500","t",2011,2027],["ProMaster City","sv",2015,2022],["ProMaster 1500 / 2500 / 3500","lv",2014,2027]],
+"Dodge":[["Ram 1500","t",1994,2010],["Dakota","t",1990,2011],["Ram Van 1500–3500","lv",1990,2003],["Sprinter","lv",2003,2009],["Grand Caravan","mv",1990,2020],["Caravan","mv",1990,2007],["Charger","s",2006,2023],["Challenger","s",2008,2023],["Neon","s",1995,2005],["Avenger","s",1995,2014],["Intrepid","s",1993,2004],["Durango","ul",1998,2027],["Journey","u",2009,2020]],
+"Toyota":[["Camry","s",1990,2027],["Corolla","s",1990,2027],["Avalon","s",1995,2022],["Prius","s",2001,2027],["Yaris","s",2007,2020],["Crown","s",2023,2027],["Tacoma","t",1995,2027],["Pickup","t",1990,1995],["T100","t",1993,1998],["Tundra","t",2000,2027],["Sienna","mv",1998,2027],["Previa","mv",1991,1997],["RAV4","u",1996,2027],["Highlander","u",2001,2027],["4Runner","u",1990,2027],["Venza","u",2009,2024],["Corolla Cross","u",2022,2027],["C-HR","u",2018,2022],["Sequoia","ul",2001,2027],["Land Cruiser","ul",1990,2027]],
+"Honda":[["Accord","s",1990,2027],["Civic","s",1990,2027],["Fit","s",2007,2020],["Insight","s",2000,2022],["Prelude","s",1990,2001],["Clarity","s",2018,2021],["Ridgeline","t",2006,2027],["Odyssey","mv",1995,2027],["Element","u",2003,2011],["CR-V","u",1997,2027],["HR-V","u",2016,2027],["Pilot","u",2003,2027],["Passport","u",1994,2027]],
+"Nissan":[["Altima","s",1993,2027],["Sentra","s",1990,2027],["Maxima","s",1990,2023],["Versa","s",2007,2027],["Z (350Z / 370Z / Z)","s",2003,2027],["Frontier","t",1998,2027],["Hardbody (D21)","t",1990,1997],["Titan","t",2004,2024],["NV200","sv",2013,2021],["NV 1500 / 2500 / 3500","lv",2012,2021],["Quest","mv",1993,2017],["Rogue","u",2008,2027],["Murano","u",2003,2027],["Pathfinder","u",1990,2027],["Xterra","u",2000,2015],["Kicks","u",2018,2027],["Juke","u",2011,2017],["Armada","ul",2004,2027]],
+"Hyundai":[["Sonata","s",1990,2027],["Elantra","s",1992,2027],["Accent","s",1995,2022],["Azera","s",2006,2017],["Genesis (sedan)","s",2009,2016],["Ioniq 6","s",2023,2027],["Veloster","s",2012,2022],["Santa Cruz","t",2022,2027],["Ioniq 5","u",2022,2027],["Tucson","u",2005,2027],["Santa Fe","u",2001,2027],["Kona","u",2018,2027],["Venue","u",2020,2027],["Palisade","ul",2020,2027]],
+"Kia":[["Optima / K5","s",2001,2027],["Forte","s",2010,2027],["Rio","s",2001,2023],["Stinger","s",2018,2023],["Soul","u",2010,2027],["Sportage","u",1995,2027],["Sorento","u",2003,2027],["Seltos","u",2021,2027],["Niro","u",2017,2027],["Telluride","ul",2020,2027],["Carnival","mv",2022,2027],["Sedona","mv",2002,2021]],
+"Mercedes-Benz":[["Sprinter 1500 / 2500 / 3500","lv",2010,2027],["Metris","sv",2016,2023],["C-Class","s",1994,2027],["E-Class","s",1990,2027],["S-Class","s",1990,2027],["CLA","s",2014,2027],["GLC","u",2016,2027],["GLE / ML","u",1998,2027],["GLS / GL","ul",2007,2027]],
+"Freightliner":[["Sprinter","lv",2002,2027]],
+"Volkswagen":[["Jetta","s",1990,2027],["Passat","s",1990,2022],["Golf / GTI","s",1990,2027],["Beetle","s",1998,2019],["Arteon","s",2019,2024],["Tiguan","u",2009,2027],["Taos","u",2022,2027],["Atlas","ul",2018,2027],["Routan","mv",2009,2014],["Eurovan","sv",1993,2003]],
+"Subaru":[["Impreza","s",1993,2027],["Legacy","s",1990,2025],["WRX","s",2002,2027],["Outback","u",1995,2027],["Forester","u",1998,2027],["Crosstrek","u",2013,2027],["Ascent","ul",2019,2027],["Baja","t",2003,2006]],
+"Mazda":[["Mazda3","s",2004,2027],["Mazda6","s",2003,2021],["Protegé","s",1990,2003],["MX-5 Miata","s",1990,2027],["B-Series","t",1990,2009],["CX-30","u",2020,2027],["CX-5","u",2013,2027],["CX-9","u",2007,2023],["CX-90","ul",2024,2027],["MPV","mv",1990,2006]],
+"Jeep":[["Wrangler","u",1990,2027],["Cherokee","u",1990,2027],["Grand Cherokee","u",1993,2027],["Compass","u",2007,2027],["Renegade","u",2015,2023],["Liberty","u",2002,2012],["Patriot","u",2007,2017],["Gladiator","t",2020,2027],["Wagoneer","ul",2022,2027]],
+"Buick":[["LeSabre","s",1990,2005],["Regal","s",1990,2020],["LaCrosse","s",2005,2019],["Century","s",1990,2005],["Verano","s",2012,2017],["Encore","u",2013,2022],["Envision","u",2016,2027],["Enclave","ul",2008,2027]],
+"Chrysler":[["300","s",2005,2023],["200","s",2011,2017],["Sebring","s",1995,2010],["PT Cruiser","s",2001,2010],["Pacifica","mv",2017,2027],["Town & Country","mv",1990,2016],["Voyager","mv",2020,2025]],
+"Cadillac":[["CTS","s",2003,2019],["ATS","s",2013,2019],["CT4 / CT5","s",2020,2027],["DeVille / DTS","s",1990,2011],["XT5","u",2017,2027],["SRX","u",2004,2016],["Escalade","ul",1999,2027]],
+"Lexus":[["ES","s",1990,2027],["IS","s",2001,2027],["GS","s",1993,2020],["LS","s",1990,2027],["RX","u",1999,2027],["NX","u",2015,2027],["GX","ul",2003,2027],["LX","ul",1996,2027]],
+"Acura":[["TLX","s",2015,2027],["TL","s",1996,2014],["TSX","s",2004,2014],["Integra","s",1990,2027],["ILX","s",2013,2022],["MDX","u",2001,2027],["RDX","u",2007,2027]],
+"Infiniti":[["G35 / G37","s",2003,2013],["Q50","s",2014,2027],["Q60","s",2017,2022],["QX60","u",2013,2027],["QX80","ul",2011,2027]],
+"Tesla":[["Model S","s",2012,2027],["Model 3","s",2017,2027],["Model X","u",2016,2027],["Model Y","u",2020,2027],["Cybertruck","t",2024,2027]],
+"BMW":[["3 Series","s",1990,2027],["5 Series","s",1990,2027],["7 Series","s",1990,2027],["X1","u",2013,2027],["X3","u",2004,2027],["X5","u",2000,2027],["X7","ul",2019,2027]],
+"Audi":[["A3","s",2006,2027],["A4","s",1996,2027],["A6","s",1995,2027],["Q3","u",2015,2027],["Q5","u",2009,2027],["Q7","ul",2007,2027]],
+"Mitsubishi":[["Lancer","s",2002,2017],["Galant","s",1990,2012],["Mirage","s",1990,2027],["Eclipse","s",1990,2012],["Outlander","u",2003,2027],["Eclipse Cross","u",2018,2027],["Montero","ul",1990,2006]],
+"Volvo":[["S60","s",2001,2027],["S90","s",2017,2027],["240 / 850","s",1990,1997],["V70 / XC70","u",1998,2016],["XC40","u",2019,2027],["XC60","u",2010,2027],["XC90","ul",2003,2027]],
+"Lincoln":[["Town Car","s",1990,2011],["MKZ","s",2007,2020],["Continental","s",1990,2020],["Navigator","ul",1998,2027],["Aviator","u",2003,2027],["Nautilus / MKX","u",2007,2027]],
+"Pontiac":[["Grand Prix","s",1990,2008],["Grand Am","s",1990,2005],["G6","s",2005,2010],["Bonneville","s",1990,2005],["Firebird","s",1990,2002],["Vibe","s",2003,2010]],
+"Saturn":[["S-Series","s",1991,2002],["Ion","s",2003,2007],["Aura","s",2007,2009],["Vue","u",2002,2010],["Outlook","ul",2007,2010]],
+"Scion":[["tC","s",2005,2016],["xB","s",2004,2015],["xD","s",2008,2014],["FR-S","s",2013,2016]],
+"Isuzu":[["NPR / NQR box truck","lv",1990,2027],["Rodeo","u",1991,2004],["Trooper","ul",1992,2002]],
+"Mercury":[["Grand Marquis","s",1990,2011],["Sable","s",1990,2009],["Milan","s",2006,2011],["Mountaineer","u",1997,2010],["Villager","mv",1993,2002]],
+"Oldsmobile":[["Cutlass","s",1990,1999],["Alero","s",1999,2004],["Eighty-Eight","s",1990,1999],["Bravada","u",1991,2004],["Silhouette","mv",1990,2004]],
+};
+
+/* class → rig recommendation */
+const CLASS_MAP = {
+  s :{pkg:"sedan",    note:"Trunk + back-seat load. The Sedan & Coupe Rig is sized for exactly this — tank flat in the trunk, generator and vac behind it, reels on top."},
+  t :{pkg:"truck",    note:"Open bed. The Truck Rig straps in with the tank against the cab and a weather cover over the gear — full working height, fastest loadouts of any setup."},
+  sv:{pkg:"smallvan", note:"Compact cargo van. The Small Van Rig anchors to the floor and still leaves you a working aisle — enclosed, secure, professional at the curb."},
+  lv:{pkg:"largevan", note:"Full-size cargo van. The Large Van Rig: 65-gal water, wall reels, shelving — the complete shop-on-wheels this vehicle was born for."},
+  mv:{pkg:"smallvan", note:"Minivan. Fold or pull the rear seats and the Small Van Rig loads straight through the sliding door — one of the best value platforms in detailing."},
+  u :{pkg:"sedan",    note:"Crossover / SUV. The hatch cargo area takes the Sedan & Coupe Rig with room to spare — and most can carry the 35-gal tank upgrade if your route runs long."},
+  ul:{pkg:"largevan", altPkg:"smallvan"},
+};
+/* full-size SUVs actually match the small-van rig best */
+CLASS_MAP.ul = {pkg:"smallvan", note:"Full-size SUV. Cargo-wise you're in small-van territory — the Small Van Rig mounts cleanly with the third row out, tank over the axle."};
+
+/* ═══════════════ RENDER ═══════════════ */
+const $ = s=>document.querySelector(s);
+const money = n=>"$"+n.toLocaleString("en-US");
+const pkgById = id=>PACKAGES.find(p=>p.id===id);
+
+function renderRigs(){
+  $("#rigGrid").innerHTML = PACKAGES.map(p=>`
+  <article class="rig rev" id="rig-${p.id}">
+    <div class="rig-top"><span class="rig-no">${p.no} · DOD SETUPS</span><span class="rig-tag">${p.tag}</span></div>
+    <div class="rig-main">
+      <div>
+        <h3>${p.name}</h3>
+        <div class="rig-fits">${p.fits}</div>
+      </div>
+      <div class="rig-price-row">
+        <span class="rig-price">${money(p.price)} <small>complete</small></span>
+        <span class="rig-value">parts street value ≈ ${money(p.partsValue)} · split-pay available</span>
+      </div>
+      <div class="caps">${Object.entries(p.caps).map(([k,v])=>`<div class="cap"><b>${v}</b><span>${k}</span></div>`).join("")}</div>
+      <div class="fits-like">
+        <span class="lbl">FITS LIKE:</span>
+        ${p.examples.map(e=>`<span class="chip">${e}</span>`).join("")}
+        <span class="chip more">+ similar</span>
+      </div>
+      <div class="rig-actions">
+        <button class="btn btn-jet" data-buy="${p.id}">Buy this rig</button>
+      </div>
+      <details class="parts">
+        <summary>Full parts list — every dollar itemized</summary>
+        <table>
+          ${p.items.map(([n,pr])=>`<tr><td>${n}</td><td class="pr">${money(pr)}</td></tr>`).join("")}
+          <tr class="total"><td>Parts street value</td><td class="pr">≈ ${money(p.partsValue)}</td></tr>
+        </table>
+        <p class="incl">Package price ${money(p.price)} includes assembly, tank plumbing, generator load-testing, mounting hardware, loadout &amp; a live handoff walkthrough.</p>
+      </details>
+    </div>
+  </article>`).join("");
+}
+
+function renderSystems(){
+  $("#sysGrid").innerHTML = SYSTEMS.map(s=>`
+    <div class="sys rev">
+      <div class="id">${s.id}</div>
+      <h3>${s.name}</h3>
+      <p>${s.how}</p>
+      <div class="pick"><span>Budget pick: <b>${s.pick}</b></span><span class="pr">${s.pr}</span></div>
+    </div>`).join("");
+}
+
+/* ═══════════════ FINDER ═══════════════ */
+const fYear=$("#fYear"), fMake=$("#fMake"), fModel=$("#fModel"), fRes=$("#finderResult");
+let lastLookup = null;
+
+function initFinder(){
+  for(let y=2027;y>=1990;y--) fYear.add(new Option(y,y));
+  fYear.onchange = ()=>{
+    const y=+fYear.value;
+    fMake.innerHTML='<option value="">Select make…</option>';
+    fModel.innerHTML='<option value="">Select model…</option>';
+    fModel.disabled=true;
+    if(!y){fMake.disabled=true;showIdle();return}
+    Object.keys(V).sort().forEach(mk=>{
+      if(V[mk].some(([,,a,b])=>y>=a&&y<=b)) fMake.add(new Option(mk,mk));
+    });
+    fMake.disabled=false; showIdle();
+  };
+  fMake.onchange = ()=>{
+    const y=+fYear.value, mk=fMake.value;
+    fModel.innerHTML='<option value="">Select model…</option>';
+    if(!mk){fModel.disabled=true;showIdle();return}
+    V[mk].filter(([,,a,b])=>y>=a&&y<=b).sort((a,b)=>a[0].localeCompare(b[0]))
+         .forEach(([m])=>fModel.add(new Option(m,m)));
+    fModel.disabled=false; showIdle();
+  };
+  fModel.onchange = ()=>{
+    if(!fModel.value){showIdle();return}
+    const y=fYear.value, mk=fMake.value, entry=V[mk].find(([m])=>m===fModel.value);
+    const map=CLASS_MAP[entry[1]], p=pkgById(map.pkg);
+    lastLookup = `${y} ${mk} ${fModel.value}`;
+    fRes.innerHTML = `
+      <div class="res-eyebrow">Match found · ${p.no}</div>
+      <div class="res-vehicle">${y} ${mk} ${fModel.value}</div>
+      <div class="res-arrow">Recommended setup ↓</div>
+      <div class="res-rig">${p.name}</div>
+      <div class="res-price">${money(p.price)} <span style="font-size:14px;color:var(--dim)">complete · parts value ≈ ${money(p.partsValue)}</span></div>
+      <p class="res-note">${map.note}</p>
+      <div class="res-actions">
+        <button class="btn btn-jet" data-buy="${p.id}">Buy the ${p.name.replace(" Rig","")} rig — ${money(p.price)}</button>
+        <a class="btn btn-ghost" href="#rig-${p.id}">See full parts list</a>
+      </div>`;
+  };
+}
+function showIdle(){
+  lastLookup=null;
+  fRes.innerHTML = `<div class="idle"><span class="big">Awaiting vehicle…</span>
+    Pick a year, make and model and your recommended rig shows up here with pricing
+    and a straight answer on how it mounts.</div>`;
+}
+
+/* ═══════════════ ORDER MODAL ═══════════════ */
+const modal=$("#orderModal"), form=$("#orderForm"), done=$("#orderDone");
+let activePkg=null;
+
+function openOrder(id){
+  const p=pkgById(id); if(!p) return;
+  /* Stripe Payment Link takes over when configured */
+  const link=CONFIG.stripeLinks[id];
+  if(link){ window.open(link,"_blank","noopener"); return; }
+  activePkg=p;
+  $("#omRig").textContent=`${p.no} · ${p.name}`;
+  $("#omPrice").textContent=money(p.price);
+  if(lastLookup) $("#oVehicle").value=lastLookup;
+  form.style.display=""; done.classList.remove("show");
+  modal.classList.add("open");
+  document.body.style.overflow="hidden";
+  setTimeout(()=>$("#oName").focus(),50);
+}
+function closeOrder(){
+  modal.classList.remove("open");
+  document.body.style.overflow="";
+}
+document.addEventListener("click",e=>{
+  const buy=e.target.closest("[data-buy]");
+  if(buy){openOrder(buy.dataset.buy);return}
+  if(e.target.closest("[data-close]")) closeOrder();
+});
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&modal.classList.contains("open")) closeOrder(); });
+
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  const d=Object.fromEntries(new FormData(form));
+  const p=activePkg;
+  const lines=[
+    `DOD SETUPS — WORK ORDER`,
+    `${p.no} · ${p.name} — ${money(p.price)}`,
+    ``,
+    `Name:      ${d.name}`,
+    `Phone:     ${d.phone}`,
+    `Email:     ${d.email}`,
+    `City:      ${d.city||"—"}`,
+    `Vehicle:   ${d.vehicle||"—"}`,
+    `Payment:   ${d.pay}`,
+    `Notes:     ${d.notes||"—"}`,
+    ``,
+    `Rig contents:`,
+    ...p.items.map(([n,pr])=>`  • ${n} — ${money(pr)}`),
+    ``,
+    `Package price: ${money(p.price)} (parts street value ≈ ${money(p.partsValue)})`,
+  ];
+  const body=lines.join("\n");
+  $("#orderText").textContent=body;
+  const mail=`mailto:${CONFIG.orderEmail}?subject=${encodeURIComponent(`Rig order — ${p.name} — ${d.name}`)}&body=${encodeURIComponent(body)}`;
+  window.location.href=mail;
+  form.style.display="none";
+  done.classList.add("show");
+});
+$("#copyOrder").addEventListener("click",async()=>{
+  try{
+    await navigator.clipboard.writeText($("#orderText").textContent);
+    $("#copyOrder").textContent="Copied ✓";
+    setTimeout(()=>$("#copyOrder").textContent="Copy order text",1800);
+  }catch(_){ /* clipboard blocked — text stays selectable */ }
+});
+
+/* footer email links */
+$("#footEmail").href=`mailto:${CONFIG.orderEmail}`;
+$("#footEmail").textContent=CONFIG.orderEmail;
+$("#doneEmail").href=`mailto:${CONFIG.orderEmail}`;
+
+/* scroll reveal */
+function initReveal(){
+  const els=document.querySelectorAll(".rev");
+  if(!("IntersectionObserver" in window)) return; /* no IO → everything stays visible */
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const io=new IntersectionObserver(es=>es.forEach(en=>{
+    if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target)}
+  }),{threshold:.12});
+  els.forEach(el=>{el.classList.add("pre");io.observe(el)});
+}
+
+renderRigs();
+renderSystems();
+initFinder();
+initReveal();
+</script>
+</body>
+</html>
