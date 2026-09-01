@@ -72,11 +72,12 @@ matching `IMG_ALT` text too.
 
 ## Notes
 
-- **Every rig must include the hand-tool kit** — spray bottles, wheel & detail brushes,
-  wash mitts, interior scrub brushes, applicator pads. Contractors can't work without
-  them, and the FAQ promises they're included. If you edit `PACKAGES`, keep the
-  "Hand-tool kit" line in every rig; it's also the core of any future monthly
-  resupply box (bottle sprayers, brushes and mitts wear out fastest).
+- **Every rig must include the hand-tool lines** — 6 spray bottles ($18), wheel &
+  barrel brush set ($20), interior & detail brush set ($18), two 5-gal wash buckets
+  with grit guards ($35), wash mitts + applicator pads ($12). Contractors can't work
+  without them, and the FAQ promises they're included. If you edit `PACKAGES`, keep
+  these five lines in every rig; they're also the core of any future monthly resupply
+  box (bottle sprayers, brushes and mitts wear out fastest).
 
 - Street prices shown on rig cards are recent US retail (Harbor Freight, Sun Joe, WEN,
   fleet-supply tanks), last verified 8/31/2026 against Harbor Freight coupon pricing,
