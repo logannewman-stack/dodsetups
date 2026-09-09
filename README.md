@@ -70,6 +70,19 @@ convert your photo to WebP around 1200 px wide (`cwebp -q 74 photo.jpg -o photo.
 base64-encode it, and replace that rig's `data:image/webp;base64,...` string. Update the
 matching `IMG_ALT` text too.
 
+## Part photos
+
+The `equipment*.{webp,avif,jpg,png}` files in the repo root are the full-size
+product photos. They are NOT referenced directly by the site — `index.html`
+carries 160 px square WebP thumbnails inlined as data URIs in the `ITEM_IMG`
+object, keyed by the exact item name string used in `PACKAGES`. That keeps the
+site a single self-contained file.
+
+To add or replace a part photo: drop the image in the repo root, make a trimmed
+160 px square WebP of it, base64 it, and add/replace the entry in `ITEM_IMG`
+using the item's exact name. Items with no entry simply render without a
+thumbnail, so partial coverage is fine.
+
 ## Notes
 
 - **Every rig must include the hand-tool lines** — 6 spray bottles ($18), wheel &
