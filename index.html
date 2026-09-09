@@ -332,7 +332,7 @@ footer{background:var(--band);border-top:1px solid var(--line);padding:56px 0 44
       <details>
         <summary>Why these parts? They look cheap.</summary>
         <div class="a"><p>That&rsquo;s the point — this is the least money that produces a rig that fully
-        works, chosen from gear we&rsquo;ve actually run: Predator generators, Sun Joe pressure washers,
+        works, chosen from gear we&rsquo;ve actually run: Predator generators, RYOBI pressure washers,
         pancake compressors, fleet-supply poly tanks. Every part carries its manufacturer warranty,
         and every one has a standard upgrade path — bigger tank, gas pressure washer, quieter
         generator — when your route fills up.</p></div>
@@ -469,7 +469,7 @@ const IMG = {
 const IMG_ALT = {
   suv:      "SUV Rig — studio photo in production.",
   minivan:  "Minivan Rig — studio photo in production.",
-  sedan:    "Open trunk of a white sedan packed as a detailing rig — low-profile poly tank in the trunk, WEN-style 2,000 W inverter generator, Sun Joe pressure washer, 3-gal compressor with orange air hose, wet/dry vac, cord and hose reels, spray-bottle caddy, towels and wash buckets.",
+  sedan:    "Open trunk of a white sedan packed as a detailing rig — low-profile poly tank in the trunk, WEN-style 2,000 W inverter generator, green RYOBI-class electric pressure washer, 3-gal compressor with orange air hose, wet/dry vac, cord and hose reels, spray-bottle caddy, towels and wash buckets.",
   truck:    "White pickup with a detailing rig in the bed — strapped water tank against the cab, hose reel, inverter generator, compressor and vacuum on the tailgate side.",
   smallvan: "Rear doors of a compact white cargo van opened on a detailing rig — hose reel and shelf of chemicals up top, water tank, generator and wet/dry vacuum on an anchored floor tray.",
   largevan: "Interior of a full-size white cargo van fitted as a detailing rig — wall reels, 65-gallon tank, stocked shelving, generator and stainless vacuum.",
@@ -479,15 +479,15 @@ const IMG_ALT = {
 const PACKAGES = [
   {
     id:"sedan", no:"RIG-01", name:"Sedan &amp; Coupe Rig", tag:"Trunk-fit",
-    price:1299, partsValue:1190,
+    price:1299, partsValue:1170,
     fits:"Rides in a trunk + back seat. For contractors starting in the car they already own.",
     examples:["Toyota Camry","Honda Accord"],
     caps:{ Water:"16 gal", Power:"2,000 W", Air:"3 gal", Vacuum:"5 gal" },
     items:[
       ["16-gal low-profile poly water tank + fill kit",109],
       ["2,000 W quiet inverter generator (WEN 56200i class)",329],
-      ["Sun Joe SPX3000 pressure washer — 2,030 PSI",189],
-      ["12 V tank-feed pump + plumbing kit",69],
+      ["RYOBI RY1419MT wheeled electric pressure washer — 1,900 PSI",149],
+      ["VEVOR 12 V 5 GPM diaphragm pump — 70 PSI + plumbing kit",89],
       ["3-gal air compressor + blow-out gun",75],
       ["5-gal 4 HP wet/dry vacuum",69],
       ["50-ft 12/3 extension cord on winder reel",49],
@@ -502,15 +502,15 @@ const PACKAGES = [
   },
   {
     id:"suv", no:"RIG-02", name:"SUV Rig", tag:"Hatch cargo",
-    price:1549, partsValue:1379,
+    price:1549, partsValue:1359,
     fits:"Loads through the hatch on an anchored spill tray. For the crossover or full-size SUV you already daily-drive.",
     examples:["Toyota RAV4","Chevy Tahoe"],
     caps:{ Water:"25 gal", Power:"2,000 W", Air:"3 gal", Vacuum:"5.5 gal" },
     items:[
       ["25-gal low-profile poly tank + fill kit",169],
       ["2,000 W quiet inverter generator (WEN 56200i class)",329],
-      ["Sun Joe SPX3000 pressure washer — 2,030 PSI",189],
-      ["12 V tank-feed pump + plumbing kit",69],
+      ["RYOBI RY1419MT wheeled electric pressure washer — 1,900 PSI",149],
+      ["VEVOR 12 V 5 GPM diaphragm pump — 70 PSI + plumbing kit",89],
       ["3-gal air compressor + blow-out gun",75],
       ["5.5-gal 5 HP wet/dry vacuum",79],
       ["50-ft 12/3 extension cord on winder reel",49],
@@ -526,15 +526,15 @@ const PACKAGES = [
   },
   {
     id:"truck", no:"RIG-03", name:"Truck Rig", tag:"Open bed",
-    price:1849, partsValue:1783,
+    price:1849, partsValue:1763,
     fits:"Strapped and covered in a pickup bed, tank against the cab. The workhorse setup.",
     examples:["Ford F-150","Chevy Silverado 1500"],
     caps:{ Water:"35 gal", Power:"3,500 W", Air:"6 gal", Vacuum:"5.5 gal" },
     items:[
       ["35-gal leg tank + tie-down kit",199],
       ["Predator 3500 super-quiet inverter generator",649],
-      ["Sun Joe SPX3000 pressure washer — 2,030 PSI",189],
-      ["12 V tank-feed pump + plumbing kit",69],
+      ["RYOBI RY1419MT wheeled electric pressure washer — 1,900 PSI",149],
+      ["VEVOR 12 V 5 GPM diaphragm pump — 70 PSI + plumbing kit",89],
       ["6-gal 150 PSI pancake compressor + blow-out gun",119],
       ["5.5-gal 5 HP wet/dry vacuum",79],
       ["50-ft retractable extension cord reel",79],
@@ -550,15 +550,15 @@ const PACKAGES = [
   },
   {
     id:"smallvan", no:"RIG-04", name:"Small Van Rig", tag:"Compact cargo",
-    price:1999, partsValue:1902,
+    price:1999, partsValue:1882,
     fits:"Floor-anchored in a compact cargo van — enclosed, organized, ready to roll up and work.",
     examples:["Ford Transit Connect","Ram ProMaster City"],
     caps:{ Water:"35 gal", Power:"3,500 W", Air:"6 gal", Vacuum:"5.5 gal" },
     items:[
       ["35-gal low-profile poly tank + fill kit",209],
       ["Predator 3500 super-quiet inverter generator",649],
-      ["Sun Joe SPX3000 pressure washer — 2,030 PSI",189],
-      ["12 V tank-feed pump + plumbing kit",69],
+      ["RYOBI RY1419MT wheeled electric pressure washer — 1,900 PSI",149],
+      ["VEVOR 12 V 5 GPM diaphragm pump — 70 PSI + plumbing kit",89],
       ["6-gal 150 PSI pancake compressor + blow-out gun",119],
       ["5.5-gal 5 HP wet/dry vacuum",79],
       ["50-ft retractable extension cord reel",79],
@@ -575,15 +575,15 @@ const PACKAGES = [
   },
   {
     id:"minivan", no:"RIG-05", name:"Minivan Rig", tag:"Sliding door",
-    price:2049, partsValue:1952,
+    price:2049, partsValue:1932,
     fits:"A removable deck rolls in through the sliding door — full 3,500 W rig on route days, family van by the weekend.",
     examples:["Honda Odyssey","Toyota Sienna"],
     caps:{ Water:"35 gal", Power:"3,500 W", Air:"6 gal", Vacuum:"5.5 gal" },
     items:[
       ["35-gal low-profile poly tank + fill kit",209],
       ["Predator 3500 super-quiet inverter generator",649],
-      ["Sun Joe SPX3000 pressure washer — 2,030 PSI",189],
-      ["12 V tank-feed pump + plumbing kit",69],
+      ["RYOBI RY1419MT wheeled electric pressure washer — 1,900 PSI",149],
+      ["VEVOR 12 V 5 GPM diaphragm pump — 70 PSI + plumbing kit",89],
       ["6-gal 150 PSI pancake compressor + blow-out gun",119],
       ["5.5-gal 5 HP wet/dry vacuum",79],
       ["50-ft retractable extension cord reel",79],
@@ -600,15 +600,15 @@ const PACKAGES = [
   },
   {
     id:"largevan", no:"RIG-06", name:"Large Van Rig", tag:"Full-size cargo",
-    price:2399, partsValue:2247,
+    price:2399, partsValue:2227,
     fits:"The full shop-on-wheels for a full-size cargo van — big water, wall reels, shelving.",
     examples:["Ford Transit 250","Mercedes Sprinter 2500"],
     caps:{ Water:"65 gal", Power:"3,500 W", Air:"6 gal", Vacuum:"12 gal" },
     items:[
       ["65-gal low-profile detailing tank + fill kit",339],
       ["Predator 3500 super-quiet inverter generator",649],
-      ["Sun Joe SPX3000 pressure washer — 2,030 PSI",189],
-      ["12 V tank-feed pump + plumbing kit",69],
+      ["RYOBI RY1419MT wheeled electric pressure washer — 1,900 PSI",149],
+      ["VEVOR 12 V 5 GPM diaphragm pump — 70 PSI + plumbing kit",89],
       ["6-gal 150 PSI pancake compressor + blow-out gun",119],
       ["12-gal 6.5 HP wet/dry vacuum",119],
       ["50-ft retractable extension cord reel",79],
@@ -628,8 +628,8 @@ const PACKAGES = [
 
 /* ═══════════════ SYSTEMS (What's-inside grid; prices = Truck Rig picks) ═══ */
 const SYSTEMS = [
-  {id:"SYS-01",name:"Water",how:"Poly leg tank from fleet supply, plumbed with a fill port and shutoff. 16 to 65 gal by rig.",pick:"35-gal leg tank",pr:"$199"},
-  {id:"SYS-02",name:"Pressure",how:"2,030 PSI electric washer fed from your tank by a 12 V pump — no spigot needed at the job.",pick:"Sun Joe SPX3000 + feed pump",pr:"$258"},
+  {id:"SYS-01",name:"Water",how:"Poly leg tank from fleet supply, plumbed with a fill port and shutoff. 16 to 65 gal by rig — the 5 GPM pump gives it real spigot pressure.",pick:"35-gal leg tank",pr:"$199"},
+  {id:"SYS-02",name:"Pressure",how:"1,900 PSI electric washer fed from your tank by a 12 V pump — no spigot needed at the job. Low flow stretches a tank, and it's stocked at any Home Depot.",pick:"RYOBI RY1419MT + VEVOR 5 GPM pump",pr:"$238"},
   {id:"SYS-03",name:"Power",how:"Super-quiet inverter generator, load-tested running the vac and compressor together.",pick:"Predator 3500",pr:"$649"},
   {id:"SYS-04",name:"Air",how:"Blow-out gun for vents, seals, badges and door jambs — the difference between clean and detailed.",pick:"6-gal 150 PSI pancake",pr:"$119"},
   {id:"SYS-05",name:"Vacuum",how:"Wet/dry vac with the reach and CFM for carpets, mats and extractions-lite.",pick:"5.5-gal 5 HP wet/dry",pr:"$79"},

@@ -79,8 +79,9 @@ matching `IMG_ALT` text too.
   these five lines in every rig; they're also the core of any future monthly resupply
   box (bottle sprayers, brushes and mitts wear out fastest).
 
-- Street prices shown on rig cards are recent US retail (Harbor Freight, Sun Joe, WEN,
-  fleet-supply tanks), last verified 9/3/2026 against Harbor Freight coupon pricing,
-  WEN/Amazon deal history and tank retailers — recheck them a couple of times a year.
+- Street prices shown on rig cards are recent US retail (Harbor Freight, RYOBI, WEN,
+  fleet-supply tanks), last verified 9/9/2026 against Harbor Freight coupon pricing,
+  Home Depot/RYOBI listings, WEN deal history and tank retailers — recheck them a
+  couple of times a year.
 - The footer disclaimer already tells buyers street prices move with the market and the
   package price is what they pay.
