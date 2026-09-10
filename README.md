@@ -29,8 +29,8 @@ const CONFIG = {
   itemized work order at `orderEmail`. You invoice the contractor from there. Nothing else
   to set up.
 - **Instant card checkout**: create a [Stripe Payment Link](https://dashboard.stripe.com/payment-links)
-  for each rig (Sedan $1,299 · SUV $1,549 · Truck $1,849 · Small Van $1,999 ·
-  Minivan $2,049 · Large Van $2,399) and paste
+  for each rig (Sedan $1,849 · SUV $2,049 · Truck $2,149 · Small Van $2,299 ·
+  Minivan $2,349 · Large Van $2,749) and paste
   the URLs into `stripeLinks`. Any rig with a link goes straight to Stripe checkout instead
   of the email form.
 
@@ -91,6 +91,12 @@ thumbnail, so partial coverage is fine.
   without them, and the FAQ promises they're included. If you edit `PACKAGES`, keep
   these five lines in every rig; they're also the core of any future monthly resupply
   box (bottle sprayers, brushes and mitts wear out fastest).
+
+- **Package prices sit ~11-13% over parts street value** (Sedan +$194 · SUV +$222 ·
+  Truck +$232 · Small Van +$263 · Minivan +$263 · Large Van +$277). That spread covers
+  sourcing, assembly, tank plumbing, generator load-testing, mounting hardware and the
+  handoff walkthrough. If you edit `PACKAGES`, keep `price` above `partsValue` on every
+  rig or you sell below cost.
 
 - Street prices shown on rig cards are recent US retail (Harbor Freight, RYOBI, WEN,
   fleet-supply tanks), last verified 9/9/2026 against Harbor Freight coupon pricing,
